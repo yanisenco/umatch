@@ -1,0 +1,37 @@
+{
+    "welcome": "Bienvenue",
+    "servicesPresentation": {
+        "buttonText": "en savoir plus",
+        "title": "Artys offers you its services",
+        "subparts": [
+            {
+                "title": "Copyright/royalty management",
+                "description": "What if your copyright/royalties became a currency for services or crowdfunding? Register, protect, tokenize and manage your copyrights/royalties in just a few clicks!"
+            },
+            {
+                "title": "Fan monetization (Royaltips)",
+                "description": "Artys pays a commission of 30%/month/fan to the artists and 25%/month/fan to all its partners! Create your playlist, bring your fans, monetize your audience and receive monthly remuneration thanks to music!"
+            },
+            {
+                "title": "Equistream (User Centric)",
+                "description": "The more playlists you are on, the more you will be listened to and the more royalties or related rights you will receive! Does that seem normal to you? And yet this was not the case before! What if streaming finally allowed you to increase your income?"
+            },
+            {
+                "title": "Royalty crowdfunding (RTO)",
+                "description": "Engage your community in exchange for a % of royalties during a period that you define and finance your next project! Tokenizing copyright allows for crowdfunding that will truly engage your contributors."
+            },
+            {
+                "title": "Networking",
+                "description": "Building a network in the music industry, contacting influencers or brands, getting noticed by a label or finding a producer has never been easier! Define your project, launch a search, match, collaborate!"
+            },
+            {
+                "title": "Music monetization",
+                "description": "Win Win! For the first time, labels/record companies will be able to monetize their catalog by renting it to members who wish to monetize their audience in music (brands, influencers, YouTubers, public figures, etc.)."
+            }
+        ]
+    },
+    "discoverySection": {
+        "title": "Discover Umatch",
+        "description":"A dynamic ecosystem, a collaborative economy, monthly remuneration!"
+    }
+}
