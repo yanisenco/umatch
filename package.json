@@ -23,7 +23,7 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^7.2.1",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.4.1"
   },
   "scripts": {

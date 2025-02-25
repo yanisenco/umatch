@@ -14,7 +14,7 @@ const DiscoverySection = () => {
                 <p className="text-base mb-10">{t('discoverySection.description')}</p>
             </div>
             <img
-                className="absolute inset-0 h-full -z-10"
+                className="absolute md:-top-[70%] right-0 w-full h-auto -z-50"
                 src={discoverSectionBackground}
                 alt="Discovery Section Background"
             />

@@ -63,7 +63,54 @@
         ],
         "button" : "I'm registering"
     },
+    "actorSection": {
+        "title": "All the actors of Umatch",
+        "description": "Artys, a private and equitable ecosystem. All players in our ecosystem will be able to monetize their fans by creating their playlists"
+    },
     "subscriptionPlansSection": {
-        "title": "There is always a subscription that suits you"
+        "title": "There is always a subscription that suits you",
+        "plans": [
+            {
+                "title": "Bronze",
+                "price": "0€",
+                "features": [
+                    "Network",
+                    "Streaming",
+                    "Fanbase monetization",
+                    "Crowndunding",
+                    "Right holders management",
+                    "Tokenization"
+                ]
+            },
+            {
+                "title": "Gold",
+                "price": "4.99€",
+                "features": [
+                    "Network",
+                    "Streaming",
+                    "Fanbase monetization",
+                    "Crowndunding",
+                    "Right holders management",
+                    "Tokenization"
+                ]
+            },
+            {
+                "title": "Platinum",
+                "price": "19.90€",
+                "features": [
+                    "Network",
+                    "Streaming",
+                    "Fanbase monetization",
+                    "Crowndunding",
+                    "Right holders management",
+                    "Tokenization"
+                ]
+            }
+        ]
+    },
+    "communitySection": {
+        "title": "Join our community!",
+        "description": "Beta version launch in June",
+        "button": "I'm registering"
     }
 }
