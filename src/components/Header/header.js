@@ -11,11 +11,11 @@ const Header = () => {
 
 
   return (
-    <nav className="sticky top-0 w-full z-50 backdrop-blur-lg ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+    <nav className="sticky top-0 w-full z-50 md:backdrop-blur-lg ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className="hidden md:block flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
             src={greenLogo}
@@ -27,7 +27,7 @@ const Header = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="inline-flex items-center p-2  h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#f5f0e2] focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-auto h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 bg-black"
           aria-controls="navbar-solid-bg"
           aria-expanded={isOpen}
         >
@@ -70,7 +70,7 @@ const Header = () => {
             <li>
               <Link
                 href="/"
-                className="flex block py-3 px-5 rounded-xl bg-black text-white hover:bg-black-80"
+                className="flex block py-3 px-5 rounded-xl bg-black text-white hover:bg-black-80 mb-5"
               >
                 {t('header.connection')}
               </Link>

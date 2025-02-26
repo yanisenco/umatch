@@ -72,11 +72,11 @@ const LanguageDropdown = () => {
                 </svg>
             </button>
             {isDropdownOpen && (
-                <ul className="absolute left-0 mt-2 bg-input-color rounded-lg shadow-lg ">
+                <ul className="absolute left-0 mt-2 bg-input-color rounded-lg shadow-lg w-full ">
                     <li>
                         <button
                             onClick={() => changeLanguage('fr')}
-                            className="block px-4 py-2 w-full"
+                            className="block px-4 py-2 m-auto"
                         >
                             FR
                         </button>
@@ -84,7 +84,7 @@ const LanguageDropdown = () => {
                     <li>
                         <button
                             onClick={() => changeLanguage('en')}
-                            className="block px-4 py-2"
+                            className="block px-4 py-2 m-auto"
                         >
                             EN
                         </button>

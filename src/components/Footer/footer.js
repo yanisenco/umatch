@@ -20,9 +20,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Partners</h3>
           <div className="flex space-x-6 max-w-96">
-            <img src={foundersLogo} alt="BPI France" className="h-24" />
-            <img src={bpiLogo} alt="Founders Ventures" className="h-16 m-auto" />
-            <img src={frenchTechLogo} alt="La French Tech" className="h-24" />
+            <img src={foundersLogo} alt="BPI France" className="h-10 md:h-24" />
+            <img src={bpiLogo} alt="Founders Ventures" className="h-10 md:h-16 m-auto" />
+            <img src={frenchTechLogo} alt="La French Tech" className="h-10 md:h-24" />
           </div>
         </div>
         </div>

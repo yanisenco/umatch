@@ -48,10 +48,10 @@ const ServicesPresentation = () => {
             {isDesktop ? <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {offers}
             </div> :
-            <Slider {...settings} className="flex flex-col md:flex-row">
+            <Slider {...settings} className="flex flex-col md:flex-row mb-10">
                 {offers}
             </Slider>}
-            <div className="mt-4 flex justify-center items-center">
+            <div className="mt-4 flex justify-center items-center mb-10">
                 <Button text={servicesPresentation.buttonText} />
             </div>
         </div>
