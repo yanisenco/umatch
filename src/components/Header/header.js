@@ -20,7 +20,7 @@ const Header = () => {
   
   return (
     <nav ref={headerRef} className="sticky top-0 w-full z-50 md:backdrop-blur-lg ">
-      <div className={`max-w-screen-xl flex flex-wrap md:items-center justify-between mx-auto p-4 md:relative w-full md:h-auto top-0 left-0 ${isOpen ? "h-screen backdrop-blur-lg" : ""}`}>
+      <div className={`max-w-screen-xl flex flex-wrap md:items-center justify-between mx-auto p-4 md:relative w-full absolute md:h-auto top-0 left-0 ${isOpen ? "h-screen backdrop-blur-lg" : ""}`}>
         <RouterLink
           to="/"
           className="hidden md:block flex items-center space-x-3 rtl:space-x-reverse"

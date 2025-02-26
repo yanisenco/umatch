@@ -1,37 +1,128 @@
 {
-    "welcome": "Bienvenue",
+    "header": {
+        "connection": "connexion",
+        "subscription": "abonnement",
+        "artys": "artys : streaming musical",
+        "umatch": "umatch : le service professionnel"
+    },
+    "footer": {
+        "title": "Entrons en contact",
+        "description": "(Label, maison de disque, studio d'enregistrement, marque & sponsor, investisseur...)",
+        "email": "partner@artysfactory.com",
+        "partners": "Partenaires",
+        "offices": "Bureaux",
+        "localisation": "Europe",
+        "address": "🇫🇷 ARTYS FACTORY SAS 45 Avenue du Président J.F Kennedy 64200 Biarritz, France",
+        "rights": "© Artys Factory 2020 - Tous droits réservés",
+        "legalMentions": "Artys Factory - RCS 880 855 382 - SAS au capital de 199 800 € - 280 rue James Watt, Tecnosud, 66100 Perpignan, France"
+    },
     "servicesPresentation": {
-        "buttonText": "en savoir plus",
-        "title": "Artys offers you its services",
+        "buttonText": "En savoir plus",
+        "title": "Artys vous propose ses services",
         "subparts": [
             {
-                "title": "Copyright/royalty management",
-                "description": "What if your copyright/royalties became a currency for services or crowdfunding? Register, protect, tokenize and manage your copyrights/royalties in just a few clicks!"
+                "title": "Gestion des droits d'auteur/royalties",
+                "description": "Et si vos droits d'auteur/royalties devenaient une monnaie pour des services ou du financement participatif ? Enregistrez, protégez, tokenisez et gérez vos droits d'auteur/royalties en quelques clics !"
             },
             {
-                "title": "Fan monetization (Royaltips)",
-                "description": "Artys pays a commission of 30%/month/fan to the artists and 25%/month/fan to all its partners! Create your playlist, bring your fans, monetize your audience and receive monthly remuneration thanks to music!"
+                "title": "Monétisation des fans (Royaltips)",
+                "description": "Artys verse une commission de 30%/mois/fan aux artistes et de 25%/mois/fan à tous ses partenaires ! Créez votre playlist, amenez vos fans, monétisez votre audience et recevez une rémunération mensuelle grâce à la musique !"
             },
             {
                 "title": "Equistream (User Centric)",
-                "description": "The more playlists you are on, the more you will be listened to and the more royalties or related rights you will receive! Does that seem normal to you? And yet this was not the case before! What if streaming finally allowed you to increase your income?"
+                "description": "Plus vous êtes dans de playlists, plus vous serez écouté et plus vous recevrez de royalties ou de droits connexes ! Cela vous semble normal ? Et pourtant ce n'était pas le cas avant ! Et si le streaming vous permettait enfin d'augmenter vos revenus ?"
             },
             {
-                "title": "Royalty crowdfunding (RTO)",
-                "description": "Engage your community in exchange for a % of royalties during a period that you define and finance your next project! Tokenizing copyright allows for crowdfunding that will truly engage your contributors."
+                "title": "Crowdfunding de royalties (RTO)",
+                "description": "Engagez votre communauté en échange d'un % de royalties pendant une période que vous définissez et financez votre prochain projet ! Tokeniser les droits d'auteur permet un financement participatif qui engage vraiment vos contributeurs."
             },
             {
-                "title": "Networking",
-                "description": "Building a network in the music industry, contacting influencers or brands, getting noticed by a label or finding a producer has never been easier! Define your project, launch a search, match, collaborate!"
+                "title": "Réseautage",
+                "description": "Construire un réseau dans l'industrie musicale, contacter des influenceurs ou des marques, se faire remarquer par un label ou trouver un producteur n'a jamais été aussi facile ! Définissez votre projet, lancez une recherche, faites des correspondances, collaborez !"
             },
             {
-                "title": "Music monetization",
-                "description": "Win Win! For the first time, labels/record companies will be able to monetize their catalog by renting it to members who wish to monetize their audience in music (brands, influencers, YouTubers, public figures, etc.)."
+                "title": "Monétisation musicale",
+                "description": "Gagnant-gagnant ! Pour la première fois, les labels/maisons de disques pourront monétiser leur catalogue en le louant à des membres souhaitant monétiser leur audience en musique (marques, influenceurs, YouTubers, personnalités publiques, etc.)."
             }
         ]
     },
     "discoverySection": {
-        "title": "Discover Umatch",
-        "description":"A dynamic ecosystem, a collaborative economy, monthly remuneration!"
+        "title": "Découvrez Umatch",
+        "description": "Un écosystème dynamique, une économie collaborative, une rémunération mensuelle !"
+    },
+    "heroBanner": {
+        "buttonText": "je m'inscris",
+        "availability": "Disponible en juin 2021",
+        "title": "Faites de la musique, nous nous occupons du reste !",
+        "subparts": [
+            {
+                "description": "Gestion des droits d'auteur"
+            },
+            {
+                "description": "Monétisation des fans"
+            },
+            {
+                "description": "Streaming"
+            },
+            {
+                "description": "Réseautage"
+            },
+            {
+                "description": "Crowdfunding"
+            }
+        ],
+        "button": "Je m'inscris"
+    },
+    "actorSection": {
+        "title": "Tous les acteurs d'Umatch",
+        "description": "Artys, un écosystème privé et équitable. Tous les acteurs de notre écosystème pourront monétiser leurs fans en créant leurs playlists"
+    },
+    "subscriptionPlansSection": {
+        "title": "Il y a toujours un abonnement qui vous convient",
+        "plans": [
+            {
+                "title": "Bronze",
+                "price": "0€",
+                "features": [
+                    "Réseau",
+                    "Streaming",
+                    "Monétisation de fanbase",
+                    "Crowdfunding",
+                    "Gestion des titulaires de droits",
+                    "Tokenisation"
+                ]
+            },
+            {
+                "title": "Gold",
+                "price": "4,99€",
+                "features": [
+                    "Réseau",
+                    "Streaming",
+                    "Monétisation de fanbase",
+                    "Crowdfunding",
+                    "Gestion des titulaires de droits",
+                    "Tokenisation"
+                ]
+            },
+            {
+                "title": "Platinum",
+                "price": "19,90€",
+                "features": [
+                    "Réseau",
+                    "Streaming",
+                    "Monétisation de fanbase",
+                    "Crowdfunding",
+                    "Gestion des titulaires de droits",
+                    "Tokenisation"
+                ]
+            }
+        ],
+        "id": "abonnement"
+    },
+    "communitySection": {
+        "title": "Rejoignez notre communauté !",
+        "description": "Lancement de la version bêta en juin",
+        "button": "Je m'inscris",
+        "id": "communauté"
     }
 }

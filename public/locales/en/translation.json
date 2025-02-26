@@ -1,5 +1,21 @@
 {
-    "welcome": "Welcome",
+    "header": {
+        "connection": "connection",
+        "subscription":"subscription",
+        "artys":"artys : music streaming",
+        "umatch":"umatch : the professional service"
+    },
+    "footer": {
+        "title": "Let's get in touch",
+        "description":"(Label, record company, recording studio, brand & sponsor, investor...)",
+        "email":"partner@artysfactory.com",
+        "partners":"Partners",
+        "offices":"Offices",
+        "localisation":"Europe",
+        "address" : "🇫🇷 ARTYS FACTORY SAS 45 Avenue du Président J.F Kennedy 64200 Biarritz, France",
+        "rights":"© Artys Factory 2020 - All Rights reserved ",
+        "legalMentions":"Artys Factory - RCS 880 855 382 - SAS with capital of €199,800 - 280 rue James Watt, Tecnosud, 66100 Perpignan, France"
+    },
     "servicesPresentation": {
         "buttonText": "Learn more",
         "title": "Artys offers you its services",
@@ -33,12 +49,6 @@
     "discoverySection": {
         "title": "Discover Umatch",
         "description":"A dynamic ecosystem, a collaborative economy, monthly remuneration!"
-    },
-    "header": {
-        "connection": "connection",
-        "subscription":"subscription",
-        "artys":"artys : music streaming",
-        "umatch":"umatch : the professional service"
     },
     "heroBanner": {
         "buttonText": "i'm registering",
