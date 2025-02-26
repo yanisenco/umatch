@@ -32,8 +32,10 @@ const SubscriptionPlansSection = () => {
         </div>
     )) : [];
 
+    console.log(subscriptionPlansSection.id);
+
     return (
-        <div className="relative">
+        <div className="relative" id="subscription">
             <SubscriptionSectionBackground className="absolute -top-[10%] md:-top-[80%] right-0 w-full h-auto -z-50" />
             <div className="relative w-page m-auto">
                 <h2 className="text-4xl font-bold text-center md:max-w-[45%] m-auto my-10">{t('subscriptionPlansSection.title')}</h2>

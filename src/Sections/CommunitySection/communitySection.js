@@ -10,7 +10,7 @@ const CommunitySection = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="w-page m-auto relative">
+        <div className="w-page m-auto relative" id={t('communitySection.id')}>
             <h2 className="text-4xl font-bold text-center mt-20">{t('communitySection.title')}</h2>
             <p className="text-base text-center mt-10">{t('communitySection.description')}</p>
             <div className="mt-4 flex justify-center items-center">
@@ -32,7 +32,7 @@ const CommunitySection = () => {
                     alt="influencers illustration"
                 />
                 <img 
-                    className="md:hidden m-auto"
+                    className="md:hidden m-auto mb-10"
                     src={users} 
                     alt="users illustration"
                 />

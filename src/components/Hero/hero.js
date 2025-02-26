@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="flex items-center justify-center md:h-screen">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center w-full">
                 <img 
-                    className="absolute top-0 right-0 -z-10"
+                    className="relative md:absolute top-0 right-0 -z-10"
                     src={singer} 
                     alt="Singer Hero illustration"
                 />
@@ -37,7 +37,6 @@ const Hero = () => {
                         <Button text={heroBanner.button} width={'w-full'}/>
                     </div>
                 </div>
-                
             </div>
         </div>
     );

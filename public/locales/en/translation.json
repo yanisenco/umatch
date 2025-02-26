@@ -106,11 +106,13 @@
                     "Tokenization"
                 ]
             }
-        ]
+        ],
+        "id" : "subscription"
     },
     "communitySection": {
         "title": "Join our community!",
         "description": "Beta version launch in June",
-        "button": "I'm registering"
+        "button": "I'm registering",
+        "id" : "community"
     }
 }
