@@ -8,7 +8,12 @@ const SubscriptionPlansSection = () => {
     const { t } = useTranslation();
     const subscriptionPlansSection = t('subscriptionPlansSection', { returnObjects: true });
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-
+    useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth > 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
     const settings = {
         dots: true,
         infinite: true,
