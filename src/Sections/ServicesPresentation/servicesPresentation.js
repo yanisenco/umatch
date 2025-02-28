@@ -1,37 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import Button from "../../components/Button/button";
-import Slider from "react-slick";
 import TitleWithDescription from "../../components/TitleWithDescription/titleWithDescription";
+import SliderCustom from "../../components/SliderCustom/sliderCustom";
+import useIsDesktop from "../../hooks/useIsDesktop";
 
 const ServicesPresentation = () => {
     const { t } = useTranslation();
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
     const servicesPresentation = t('servicesPresentation', { returnObjects: true });
-
-    useEffect(() => {
-        const handleResize = () => setIsDesktop(window.innerWidth > 768);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ],
-    };
-
+    const isDesktop = useIsDesktop();
     const offers = Array.isArray(servicesPresentation.subparts) ? servicesPresentation.subparts.map((offer, index) => (
         <div key={index} className="p-4">
             <TitleWithDescription title={offer.title} text={offer.description} />
@@ -55,9 +32,9 @@ const ServicesPresentation = () => {
                     {offers}
                 </div>
             ) : (
-                <Slider {...settings} className="flex flex-col md:flex-row mb-10">
+                <SliderCustom>
                     {groupedOffers}
-                </Slider>
+                </SliderCustom>
             )}
             <div className="mt-4 flex justify-center items-center mb-10">
                 <Button text={servicesPresentation.buttonText} />

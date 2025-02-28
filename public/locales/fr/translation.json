@@ -75,14 +75,20 @@
     },
     "actorSection": {
         "title": "Tous les acteurs d'Umatch",
-        "description": "Artys, un écosystème privé et équitable. Tous les acteurs de notre écosystème pourront monétiser leurs fans en créant leurs playlists"
+        "description": "Artys, un écosystème privé et équitable. Tous les acteurs de notre écosystème pourront monétiser leurs fans en créant leurs playlists",
+        "artists": "Artistes",
+        "influencers": "Influenceurs YouTubers",
+        "brands": "Marques",
+        "eSport": "Clubs de (E)Sport",
+        "actors": "Acteurs",
+        "labels": "Labels"
     },
     "subscriptionPlansSection": {
         "title": "Il y a toujours un abonnement qui vous convient",
         "plans": [
             {
                 "title": "Bronze",
-                "price": "0€",
+                "price": "Gratuit",
                 "features": [
                     "Réseau",
                     "Streaming",
@@ -93,8 +99,8 @@
                 ]
             },
             {
-                "title": "Gold",
-                "price": "4,99€",
+                "title": "Or",
+                "price": "4,99€ / MOIS",
                 "features": [
                     "Réseau",
                     "Streaming",
@@ -105,8 +111,8 @@
                 ]
             },
             {
-                "title": "Platinum",
-                "price": "19,90€",
+                "title": "Platine",
+                "price": "19,90€ / MOIS",
                 "features": [
                     "Réseau",
                     "Streaming",

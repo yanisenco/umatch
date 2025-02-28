@@ -1,43 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import PlanCard from "../../components/PlanCard/planCard";
-import Slider from "react-slick";
-import { ReactComponent as SubscriptionSectionBackground } from '../../assets/illustrations/subscription-section-background.svg';
+import { ReactComponent as SubscriptionSectionBackground } from '../../assets/illustrations/svg/subscription-section-background.svg';
+import SliderCustom from "../../components/SliderCustom/sliderCustom";
+import useIsDesktop from "../../hooks/useIsDesktop";
 
 const SubscriptionPlansSection = () => {
     const { t } = useTranslation();
     const subscriptionPlansSection = t('subscriptionPlansSection', { returnObjects: true });
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-    useEffect(() => {
-        const handleResize = () => setIsDesktop(window.innerWidth > 768);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-    
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: isDesktop ? 2 : 1,
-        slidesToScroll: isDesktop ? 2 : 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ],
-    };
+    const isDesktop = useIsDesktop();
 
     const plans = Array.isArray(subscriptionPlansSection.plans) ? subscriptionPlansSection.plans.map((plan, index) => (
-        <div key={index} className="p-2 md:flex-1">
+        <div key={index} className="p-2 md:flex-1 mb-5">
             <PlanCard title={plan.title} price={plan.price} features={plan.features} id={index} />
         </div>
     )) : [];
-
-    console.log(subscriptionPlansSection.id);
 
     return (
         <div className="relative" id="subscription">
@@ -49,9 +26,9 @@ const SubscriptionPlansSection = () => {
                         {plans}
                     </div>
                         :
-                        <Slider {...settings} className="flex flex-col gap-2 md:flex-row mb-10">
-                            {plans}
-                        </Slider>
+                        <SliderCustom>
+                             {plans}
+                        </SliderCustom>
                     }
             </div>
         </div>

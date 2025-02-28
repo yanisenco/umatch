@@ -17,6 +17,7 @@ module.exports = {
         'black-60': '#707070',
         'black-40': '#9F9F9F',
         'black-20': '#CFCFCF',
+        'light-gray': '#F9F9F9',
         'input-color': '#E7EFF0'
       },
       width: {

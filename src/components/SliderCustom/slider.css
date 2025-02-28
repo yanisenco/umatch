@@ -1,0 +1,14 @@
+.slick-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.slick-dots li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+

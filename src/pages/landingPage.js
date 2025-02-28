@@ -5,6 +5,7 @@ import DiscoverySection from "../Sections/DiscoverySection/discoverySection";
 import ActorsSection from "../Sections/ActorsSection/ActorsSection";
 import SubscriptionPlansSection from "../Sections/SubscriptionPlansSection/subscriptionPlansSection";
 import CommunitySection from "../Sections/CommunitySection/communitySection";
+import AboutUsSection from "../Sections/AboutUsSection/aboutUsSection";
 
 
 const LandingPage = () => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
         <ActorsSection/>
         <SubscriptionPlansSection/>
         <CommunitySection/>
+        <AboutUsSection/>
     </>
 
     )

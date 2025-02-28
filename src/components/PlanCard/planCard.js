@@ -1,5 +1,5 @@
 import React from "react";
-import cardIllustration from "../../assets/illustrations/card-illustration.svg";
+import cardIllustration from "../../assets/illustrations/svg/card-illustration.svg";
 
 const PlanCard = ({title, price, features, id}) => {
     const play = (
@@ -48,13 +48,13 @@ const PlanCard = ({title, price, features, id}) => {
     }
 
     return (
-        <div className="bg-input-color rounded-lg shadow-lg">
+        <div className="bg-light-gray rounded-lg shadow-lg">
             <div className={`flex h-[65px] ${headerColor} rounded-t-lg items-center`} style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10px))'}}>
                 <h3 className={`absolute ml-2 text-lg uppercase font-bold ${id !==0 && "text-white"}`}>{title}</h3>
                 <img src={cardIllustration} alt="cover" className="object-cover w-full h-full" />
             </div>
             <div className="p-3 ">
-                <p className="my-3 ml-1 font-bold text-2xl uppercase">{id !==0 ? price+"/ month" : 'free'}</p>
+                <p className="my-3 ml-1 font-bold text-2xl uppercase">{price}</p>
                 <ul>
                     {availableFeatures}
                 </ul>

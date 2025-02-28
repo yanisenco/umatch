@@ -47,8 +47,11 @@
         ]
     },
     "discoverySection": {
-        "title": "Discover Umatch",
-        "description":"A dynamic ecosystem, a collaborative economy, monthly remuneration!"
+        "titleUmatch": "Discover Umatch",
+        "descriptionUmatch":"A dynamic ecosystem, a collaborative economy, monthly remuneration!",
+        "button": "I'm registering",
+        "titleArtys": "Discover Artys",
+        "descriptionArtys":"A dynamic ecosystem, a collaborative economy, monthly remuneration!"
     },
     "heroBanner": {
         "buttonText": "i'm registering",
@@ -75,14 +78,20 @@
     },
     "actorSection": {
         "title": "All the actors of Umatch",
-        "description": "Artys, a private and equitable ecosystem. All players in our ecosystem will be able to monetize their fans by creating their playlists"
+        "description": "Artys, a private and equitable ecosystem. All players in our ecosystem will be able to monetize their fans by creating their playlists",
+        "artists": "Artists", 
+        "influencers": "Influencers Youtubers", 
+        "brands": "Brands", 
+        "eSport": "(E)Sport clubs", 
+        "actors": "Actors", 
+        "labels": "Labels"
     },
     "subscriptionPlansSection": {
         "title": "There is always a subscription that suits you",
         "plans": [
             {
                 "title": "Bronze",
-                "price": "0€",
+                "price": "FREE",
                 "features": [
                     "Network",
                     "Streaming",
@@ -94,7 +103,7 @@
             },
             {
                 "title": "Gold",
-                "price": "4.99€",
+                "price": "4.99€ / MONTH",
                 "features": [
                     "Network",
                     "Streaming",
@@ -106,7 +115,7 @@
             },
             {
                 "title": "Platinum",
-                "price": "19.90€",
+                "price": "19.90€ / MONTH",
                 "features": [
                     "Network",
                     "Streaming",
@@ -124,5 +133,13 @@
         "description": "Beta version launch in June",
         "button": "I'm registering",
         "id" : "community"
+    },
+    "aboutUsSection": {
+        "title": "They talk about us",
+        "article": {
+            "title": "Music Industry: These MusicTechs Who Want to Change the Lives of Artists",
+            "description": "Since 2015, the music industry has largely returned to growth thanks in particular to streaming and yet, a large majority of artists still struggle to make a full living from their art and this observation is shared by all those involved in the profession.",
+            "button": "Learn more"
+        }
     }
 }
