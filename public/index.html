@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/UMatch.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/UMatch.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>UMatch</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>UMatch</title>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- SEO & Social Media -->
+  <meta name="description" content="Find and connect with people easily on UMatch." />
+  <meta name="keywords" content="match, connect, social, friends, networking" />
+  <meta name="author" content="UMatch Team" />
+  <meta property="og:title" content="UMatch - Find Your Perfect Match" />
+  <meta property="og:description" content="Find and connect with people easily on UMatch." />
+  <meta property="og:image" content="%PUBLIC_URL%/UMatch.png" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="%PUBLIC_URL%/UMatch.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/UMatch.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Preload Important Resources -->
+  <link rel="preload" as="image" href="%PUBLIC_URL%/singer-mobile.webp" />
+  <link rel="preload" as="image" href="%PUBLIC_URL%/singer-desktop.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+
+  <!-- Non-blocking CSS loading -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" media="print" onload="this.onload=null;this.media='all';">
+
+</head>
+
+<body>
+  <noscript>
+    <div style="text-align:center; padding:20px; background:#ffcccc; color:#000;">
+      <p>You need to enable JavaScript to run this app.</p>
+    </div>
+  </noscript>
+
+  <div id="root"></div>
+
+  <!-- Scripts will be injected here automatically during build -->
+
+</body>
+
 </html>

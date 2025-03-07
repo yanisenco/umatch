@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import desktop from "../../assets/illustrations/svg/desktop-dashboard.svg";
 import mobile from "../../assets/illustrations/svg/mobile-dashboard.svg";
-import artysMobileInterface from "../../assets/illustrations/svg/artys-mobile-interface.svg";
+import artysMobileInterface from "../../assets/illustrations/webp/artys-mobile-interface.webp";
 import discoverSectionBackground from "../../assets/illustrations/svg/discovery-section-background.svg";
 import Button from "../../components/Button/button";
 

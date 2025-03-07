@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
     "cross-env": "^7.0.3",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.4",
@@ -15,7 +18,8 @@
     "react-slick": "^0.30.3",
     "sass": "^1.43.4",
     "serve": "^14.2.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "victory": "^37.3.6"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.0",

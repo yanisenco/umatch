@@ -130,5 +130,14 @@
         "description": "Lancement de la version bêta en juin",
         "button": "Je m'inscris",
         "id": "communauté"
+    },
+    "IncomeSection": {
+        "title": "Augmentez vos revenus",
+        "description": "Vous pouvez utiliser les barres de défilement ou remplir la case.",
+        "result": "Votre résultat de simulation",
+        "frequency": "mois",
+        "fanbaseSize": "Taille de la fanbase",
+        "streamNumberPerMonth": "Nombre de streams par mois",
+        "engagementRate": "Taux d'engagement"
     }
 }

@@ -141,5 +141,14 @@
             "description": "Since 2015, the music industry has largely returned to growth thanks in particular to streaming and yet, a large majority of artists still struggle to make a full living from their art and this observation is shared by all those involved in the profession.",
             "button": "Learn more"
         }
+    },
+    "IncomeSection": {
+        "title": "Increase your income",
+        "description": "You can use the scroll bars or fill in the box.",
+        "result": "Your simulation result",
+        "frequency": "month",
+        "fanbaseSize": "Fanbase size",
+        "streamNumberPerMonth": "Number of streams per month",
+        "engagementRate": "Engagement rate"
     }
 }

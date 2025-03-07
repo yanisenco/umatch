@@ -9,7 +9,7 @@ const AboutUsSection = () => {
 
     return (
         <div>
-             <div className="w-page m-auto">
+            <div className="w-page m-auto">
             <h2 className="text-4xl font-bold text-center mt-20">{t('aboutUsSection.title')}</h2>
         </div>
             <div className="w-screen md:w-[55%] flex m-auto p-5"> 

@@ -1,24 +1,24 @@
-import React  from "react";
+import React, { Suspense }  from "react";
 import Hero from "../components/Hero/hero";
-import ServicesPresentation from "../Sections/ServicesPresentation/servicesPresentation";
-import DiscoverySection from "../Sections/DiscoverySection/discoverySection";
-import ActorsSection from "../Sections/ActorsSection/ActorsSection";
-import SubscriptionPlansSection from "../Sections/SubscriptionPlansSection/subscriptionPlansSection";
-import CommunitySection from "../Sections/CommunitySection/communitySection";
-import AboutUsSection from "../Sections/AboutUsSection/aboutUsSection";
-
 
 const LandingPage = () => {
-
+const ServicesPresentation = React.lazy(() => import("../Sections/ServicesPresentation/servicesPresentation"));
+const DiscoverySection = React.lazy(() => import("../Sections/DiscoverySection/discoverySection"));
+const ActorsSection = React.lazy(() => import("../Sections/ActorsSection/ActorsSection"));
+const SubscriptionPlansSection = React.lazy(() => import("../Sections/SubscriptionPlansSection/subscriptionPlansSection"));
+const CommunitySection = React.lazy(() => import("../Sections/CommunitySection/communitySection"));
+const IncomeSection = React.lazy(() => import("../Sections/IncomeSection/incomeSection"));
     return (
     <>
         <Hero/> 
-        <ServicesPresentation/>
-        <DiscoverySection/>
-        <ActorsSection/>
-        <SubscriptionPlansSection/>
-        <CommunitySection/>
-        <AboutUsSection/>
+        <Suspense fallback={<p>Chargement...</p>}>
+            <ServicesPresentation/>
+            <DiscoverySection/>
+            <ActorsSection/>
+            <SubscriptionPlansSection/>
+            <CommunitySection/>
+            <IncomeSection/>
+        </Suspense>
     </>
 
     )
