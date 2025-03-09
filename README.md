@@ -129,5 +129,5 @@ npm run build
 Ensuite, servez le projet en utilisant la commande suivante :
 
 ```sh
-npm run start:prod
+npm run startProd
 ```
