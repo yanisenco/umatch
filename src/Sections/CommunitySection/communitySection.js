@@ -1,14 +1,19 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import Button from "../../components/Button/button";
-import community from "../../assets/illustrations/svg/community.svg";
+import communityEN from "../../assets/illustrations/svg/community_en.svg";
+import communityFR from "../../assets/illustrations/svg/community_fr.svg";
 import waves from "../../assets/illustrations/svg/waves.svg";
-import artists from "../../assets/illustrations/svg/community-mobile/artists-professionals.svg";
-import influencers from "../../assets/illustrations/svg/community-mobile/influencers.svg";
-import users from "../../assets/illustrations/svg/community-mobile/users-fans.svg";
+import artistsEN from "../../assets/illustrations/svg/community-mobile/en/artists-professionals.svg";
+import influencersEN from "../../assets/illustrations/svg/community-mobile/en/influencers.svg";
+import usersEN from "../../assets/illustrations/svg/community-mobile/en/users-fans.svg";
+import artistsFR from "../../assets/illustrations/svg/community-mobile/fr/artists-professionals.svg";
+import influencersFR from "../../assets/illustrations/svg/community-mobile/fr/influencers.svg";
+import usersFR from "../../assets/illustrations/svg/community-mobile/fr/users-fans.svg";
 
 const CommunitySection = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const isFrench = i18n.language === 'fr';
 
     return (
         <div className="relative">
@@ -23,34 +28,34 @@ const CommunitySection = () => {
                 alt="waves illustration"
             />
             <div className="w-page m-auto relative" id={t('communitySection.id')}>
-                    <h2 className="text-4xl font-bold text-center mt-20">{t('communitySection.title')}</h2>
-                    <p className="text-base text-center mt-10">{t('communitySection.description')}</p>
-                    <div className="mt-4 flex justify-center items-center">
-                        <Button text={t('communitySection.button')}/>
-                    </div>
+                <h2 className="text-4xl text-dark-blue font-bold text-center mt-20">{t('communitySection.title')}</h2>
+                <p className="text-base text-center mt-10">{t('communitySection.description')}</p>
+                <div className="mt-4 flex justify-center items-center">
+                    <Button text={t('communitySection.button')}/>
                 </div>
-                <div className="w-[90%] m-auto md:w-page">
+            </div>
+            <div className="w-[90%] m-auto md:w-page">
                 <img 
                     className="hidden md:block m-auto"
-                    src={community} 
+                    src={isFrench ? communityFR : communityEN} 
                     alt="Community illustration"
                 />
                 <img 
                     className="md:hidden m-auto w-4/5"
-                    src={artists} 
+                    src={isFrench ? artistsFR : artistsEN} 
                     alt="artists illustration"
                 />
                 <img 
-                    className="md:hidden m-auto "
-                    src={influencers} 
+                    className="md:hidden m-auto"
+                    src={isFrench ? influencersFR : influencersEN} 
                     alt="influencers illustration"
                 />
                 <img 
                     className="md:hidden m-auto mb-10"
-                    src={users} 
+                    src={isFrench ? usersFR : usersEN} 
                     alt="users illustration"
                 />
-                </div>                          
+            </div>                          
         </div>
     )
 }

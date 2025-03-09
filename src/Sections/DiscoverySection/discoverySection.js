@@ -11,8 +11,8 @@ const DiscoverySection = () => {
 
     return (
         <div className="relative">
-            <div className="w-page m-auto">
-                <h2 className="text-4xl font-bold mb-10">{t('discoverySection.titleUmatch')}</h2>
+            <div className="w-page m-auto" id={process.env.REACT_APP_DISCOVER_UMATCH}>
+                <h2 className="text-4xl text-dark-blue font-bold mb-10">{t('discoverySection.titleUmatch')}</h2>
                 <p className="text-base mb-10">{t('discoverySection.descriptionUmatch')}</p>
                 <Button text={t('discoverySection.button')}/>
             </div>
@@ -33,14 +33,14 @@ const DiscoverySection = () => {
                     alt="Discovery Section Mobile"
                 />
             </div>
-            <div className="flex flex-col-reverse md:flex-row ">
+            <div className="flex flex-col-reverse md:flex-row " id={process.env.REACT_APP_DISCOVER_ARTYS}>
             <img
                 className="relative z-10"
                 src={artysMobileInterface}
                 alt="Discover Artys interface"
             />
-            <div className="w-page md:w-auto items-center justify-center m-auto">
-                <h2 className="text-4xl font-bold my-3">{t('discoverySection.titleArtys')}</h2>
+            <div className="w-page md:w-auto items-center justify-center m-auto" >
+                <h2 className="text-4xl text-dark-blue font-bold my-3">{t('discoverySection.titleArtys')}</h2>
                 <p className="text-base mb-3">{t('discoverySection.descriptionArtys')}</p>
             </div>
             </div>

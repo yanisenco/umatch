@@ -37,8 +37,8 @@ const Hero = () => {
 
                 <div className="w-page m-auto">
                     <div className="w-full md:w-[30%] mb-10">
-                        <p className="text-dark-blue uppercase mb-4">{t('heroBanner.availability')}</p>
-                        <h1 className="text-5xl font-bold mb-4">{t('heroBanner.title')}</h1>
+                        <p className="text-purple uppercase mb-4">{t('heroBanner.availability')}</p>
+                        <h1 className="text-5xl font-bold mb-4 text-dark-blue">{t('heroBanner.title')}</h1>
                         <div className="my-4">
                             {bulletPoints}
                         </div>

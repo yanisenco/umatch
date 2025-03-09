@@ -2,9 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useTranslation } from 'react-i18next';
-import greenLogo from "../../assets/logos/green_logo.svg";
+import purpleLogo from "../../assets/logos/purple_logo.svg";
 import menuLines from "../../assets/icons/menu-lines.svg";
 import LanguageDropdown from "../LanguageDropdown/languageDropdown";
+import Button from "../Button/button";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -30,14 +31,14 @@ const Header = () => {
   };
 
   return (
-    <nav ref={headerRef} className="sticky top-0 w-full z-50 md:backdrop-blur-lg md:bg-white md:bg-opacity-50">
+    <nav ref={headerRef} className="sticky top-0 w-full z-[100] md:backdrop-blur-lg md:bg-white md:bg-opacity-50 md:p-4 ">
       <div className={`max-w-screen-xl flex flex-wrap md:items-center justify-between mx-auto p-4 md:relative w-full absolute md:h-auto top-0 left-0 ${isOpen ? "h-screen backdrop-blur-lg bg-white bg-opacity-60" : ""}`}>
         <RouterLink
           to="/"
           className="hidden md:block flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src={greenLogo}
+            src={purpleLogo}
             alt="Logo UMatch"
             width={160}
             height={160}
@@ -65,43 +66,46 @@ const Header = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-solid-bg"
         >
-          <ul className="flex flex-col uppercase font-bold font-sm mt-4 text-black-60 md:space-x-2 md:flex-row">
-            <li>
+          <ul className="flex flex-col uppercase font-bold font-sm text-dark-blue md:space-x-2 md:flex-row">
+            <li >
               <RouterLink
-                to="/"
+                to={'/#'+ process.env.REACT_APP_DISCOVER_UMATCH}
                 className="block py-3 px-3 rounded"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScroll(process.env.REACT_APP_DISCOVER_UMATCH);
+                }}
               >
                 {t('header.umatch')}
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                to="/"
+                to={'/#'+ process.env.REACT_APP_DISCOVER_ARTYS}
                 className="block py-3 px-3 rounded"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScroll(process.env.REACT_APP_DISCOVER_ARTYS);
+                }}
               >
                 {t('header.artys')}
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                to="/#subscription"
+                to={'/#'+ process.env.REACT_APP_SUBSCRIPTION_LINK}
                 className="block py-3 px-3 rounded cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
-                  handleScroll('subscription');
+                  handleScroll(process.env.REACT_APP_SUBSCRIPTION_LINK);
                 }}
               >
                 {t('header.subscription')}
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                to="/"
-                className="flex block py-3 px-5 rounded-xl bg-black text-white hover:bg-black-80 mb-5"
-              >
-                {t('header.connection')}
-              </RouterLink>
-            </li>
+              <Button text={t('header.connection')} width={"w-fit"}/>
+             </li>
             <li>
               <LanguageDropdown />
             </li>

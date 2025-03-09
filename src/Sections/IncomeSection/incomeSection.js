@@ -6,7 +6,7 @@ const IncomeSection = () => {
     const { t } = useTranslation();
     return (
             <div className="md:w-page m-auto">
-                <h2 className="text-4xl font-bold text-center mb-10">{t('IncomeSection.title')}</h2>
+                <h2 className="text-4xl text-dark-blue font-bold text-center mb-10">{t('IncomeSection.title')}</h2>
                 <IncomeSimulator/>
             </div> 
     );
