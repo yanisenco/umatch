@@ -55,7 +55,7 @@
     },
     "heroBanner": {
         "buttonText": "i'm registering",
-        "availability" : "Available in June 2021",
+        "availability" : "Available in June 2025",
         "title": "Make music, we do the rest!",
         "subparts": [
             {
@@ -125,14 +125,12 @@
                     "Tokenization"
                 ]
             }
-        ],
-        "id" : "subscription"
+        ]
     },
     "communitySection": {
         "title": "Join our community!",
-        "description": "Beta version launch in June",
-        "button": "I'm registering",
-        "id" : "community"
+        "description": "Beta version launch in June 2025",
+        "button": "I'm registering"
     },
     "aboutUsSection": {
         "title": "They talk about us",

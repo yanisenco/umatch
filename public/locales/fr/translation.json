@@ -7,7 +7,7 @@
     },
     "footer": {
         "title": "Entrons en contact",
-        "description": "(Label, maison de disque, studio d'enregistrement, marque & sponsor, investisseur...)",
+        "description": "(Label, maison de disques, studio d'enregistrement, marque & sponsor, investisseur...)",
         "email": "partner@artysfactory.com",
         "partners": "Partenaires",
         "offices": "Bureaux",
@@ -21,38 +21,41 @@
         "title": "Artys vous propose ses services",
         "subparts": [
             {
-                "title": "Gestion des droits d'auteur/royalties",
-                "description": "Et si vos droits d'auteur/royalties devenaient une monnaie pour des services ou du financement participatif ? Enregistrez, protégez, tokenisez et gérez vos droits d'auteur/royalties en quelques clics !"
+                "title": "Gestion des droits d'auteur et des royalties",
+                "description": "Et si vos droits d'auteur/royalties devenaient une monnaie d'échange pour des services ou du financement participatif ? Inscrivez-vous, protégez, tokenisez et gérez vos droits d'auteur/royalties en quelques clics !"
             },
             {
                 "title": "Monétisation des fans (Royaltips)",
-                "description": "Artys verse une commission de 30%/mois/fan aux artistes et de 25%/mois/fan à tous ses partenaires ! Créez votre playlist, amenez vos fans, monétisez votre audience et recevez une rémunération mensuelle grâce à la musique !"
+                "description": "Artys verse une commission de 30 %/mois/fan aux artistes et 25 %/mois/fan à tous ses partenaires ! Créez votre playlist, attirez vos fans, monétisez votre audience et recevez une rémunération mensuelle grâce à la musique !"
             },
             {
                 "title": "Equistream (User Centric)",
-                "description": "Plus vous êtes dans de playlists, plus vous serez écouté et plus vous recevrez de royalties ou de droits connexes ! Cela vous semble normal ? Et pourtant ce n'était pas le cas avant ! Et si le streaming vous permettait enfin d'augmenter vos revenus ?"
+                "description": "Plus vous êtes présent dans des playlists, plus vous serez écouté et plus vous recevrez de royalties ou de droits voisins ! Cela vous semble normal ? Pourtant, ce n'était pas le cas auparavant ! Et si le streaming vous permettait enfin d'augmenter vos revenus ?"
             },
             {
-                "title": "Crowdfunding de royalties (RTO)",
-                "description": "Engagez votre communauté en échange d'un % de royalties pendant une période que vous définissez et financez votre prochain projet ! Tokeniser les droits d'auteur permet un financement participatif qui engage vraiment vos contributeurs."
+                "title": "Financement participatif en royalties (RTO)",
+                "description": "Engagez votre communauté en échange d'un pourcentage de royalties pendant une période définie et financez votre prochain projet ! La tokenisation des droits d'auteur permet un financement participatif réellement engageant."
             },
             {
-                "title": "Réseautage",
-                "description": "Construire un réseau dans l'industrie musicale, contacter des influenceurs ou des marques, se faire remarquer par un label ou trouver un producteur n'a jamais été aussi facile ! Définissez votre projet, lancez une recherche, faites des correspondances, collaborez !"
+                "title": "Mise en réseau",
+                "description": "Créer un réseau dans l'industrie musicale, contacter des influenceurs ou des marques, se faire repérer par un label ou trouver un producteur n'a jamais été aussi simple ! Définissez votre projet, lancez une recherche, matchez, collaborez !"
             },
             {
                 "title": "Monétisation musicale",
-                "description": "Gagnant-gagnant ! Pour la première fois, les labels/maisons de disques pourront monétiser leur catalogue en le louant à des membres souhaitant monétiser leur audience en musique (marques, influenceurs, YouTubers, personnalités publiques, etc.)."
+                "description": "Gagnant-Gagnant ! Pour la première fois, les labels/maisons de disques pourront monétiser leur catalogue en le louant à des membres souhaitant monétiser leur audience avec de la musique (marques, influenceurs, YouTubers, personnalités publiques, etc.)."
             }
         ]
     },
     "discoverySection": {
-        "title": "Découvrez Umatch",
-        "description": "Un écosystème dynamique, une économie collaborative, une rémunération mensuelle !"
+        "titleUmatch": "Découvrez Umatch",
+        "descriptionUmatch": "Un écosystème dynamique, une économie collaborative, une rémunération mensuelle !",
+        "button": "Je m'inscris",
+        "titleArtys": "Découvrez Artys",
+        "descriptionArtys": "Un écosystème dynamique, une économie collaborative, une rémunération mensuelle !"
     },
     "heroBanner": {
-        "buttonText": "je m'inscris",
-        "availability": "Disponible en juin 2021",
+        "buttonText": "Je m'inscris",
+        "availability": "Disponible en juin 2025",
         "title": "Faites de la musique, nous nous occupons du reste !",
         "subparts": [
             {
@@ -65,10 +68,10 @@
                 "description": "Streaming"
             },
             {
-                "description": "Réseautage"
+                "description": "Mise en réseau"
             },
             {
-                "description": "Crowdfunding"
+                "description": "Financement participatif"
             }
         ],
         "button": "Je m'inscris"
@@ -88,48 +91,54 @@
         "plans": [
             {
                 "title": "Bronze",
-                "price": "Gratuit",
+                "price": "GRATUIT",
                 "features": [
                     "Réseau",
                     "Streaming",
-                    "Monétisation de fanbase",
-                    "Crowdfunding",
-                    "Gestion des titulaires de droits",
+                    "Monétisation de la fanbase",
+                    "Financement participatif",
+                    "Gestion des ayants droit",
                     "Tokenisation"
                 ]
             },
             {
-                "title": "Or",
+                "title": "Gold",
                 "price": "4,99€ / MOIS",
                 "features": [
                     "Réseau",
                     "Streaming",
-                    "Monétisation de fanbase",
-                    "Crowdfunding",
-                    "Gestion des titulaires de droits",
+                    "Monétisation de la fanbase",
+                    "Financement participatif",
+                    "Gestion des ayants droit",
                     "Tokenisation"
                 ]
             },
             {
-                "title": "Platine",
+                "title": "Platinum",
                 "price": "19,90€ / MOIS",
                 "features": [
                     "Réseau",
                     "Streaming",
-                    "Monétisation de fanbase",
-                    "Crowdfunding",
-                    "Gestion des titulaires de droits",
+                    "Monétisation de la fanbase",
+                    "Financement participatif",
+                    "Gestion des ayants droit",
                     "Tokenisation"
                 ]
             }
-        ],
-        "id": "abonnement"
+        ]
     },
     "communitySection": {
         "title": "Rejoignez notre communauté !",
-        "description": "Lancement de la version bêta en juin",
-        "button": "Je m'inscris",
-        "id": "communauté"
+        "description": "Lancement de la version bêta en juin 2025",
+        "button": "Je m'inscris"
+    },
+    "aboutUsSection": {
+        "title": "Ils parlent de nous",
+        "article": {
+            "title": "Industrie musicale : Ces MusicTechs qui veulent changer la vie des artistes",
+            "description": "Depuis 2015, l'industrie musicale a largement repris sa croissance grâce notamment au streaming et pourtant, une grande majorité d'artistes peinent encore à vivre pleinement de leur art, un constat partagé par tous les acteurs du métier.",
+            "button": "En savoir plus"
+        }
     },
     "IncomeSection": {
         "title": "Augmentez vos revenus",
