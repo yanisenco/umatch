@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <nav ref={headerRef} className="sticky top-0 w-full z-[100] md:backdrop-blur-lg md:bg-white md:bg-opacity-50 md:p-4 ">
+    <nav ref={headerRef} className="sticky md:fixed top-0 w-full z-[100] md:backdrop-blur-lg md:bg-white md:bg-opacity-50 md:p-4 ">
       <div className={`max-w-screen-xl flex flex-wrap md:items-center justify-between mx-auto p-4 md:relative w-full absolute md:h-auto top-0 left-0 ${isOpen ? "h-screen backdrop-blur-lg bg-white bg-opacity-60" : ""}`}>
         <RouterLink
           to="/"

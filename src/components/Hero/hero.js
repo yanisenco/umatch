@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import musicNote from "../../assets/icons/music-note.svg";
 import Button from "../Button/button";
+import purpleLogo from "../../assets/logos/purple_logo.svg";
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -23,15 +24,21 @@ const Hero = () => {
     return (
         <div className="flex items-center justify-center md:h-screen">
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center w-full">
-                
-                <picture className="relative md:absolute  right-0 -z-10 md:w-[80%] -top-10 md:top-0">
+                <img
+                    src={purpleLogo}
+                    alt="Logo UMatch"
+                    className="block md:hidden absolute z-10 top-4 left-4"
+                    width={160}
+                    height={160}
+                /> 
+                <picture className="relative md:absolute right-0 -z-10 md:w-[80%] md:h-screen">
                     <source srcSet={singerDesktop} media="(min-width: 1024px)" />
                     <source srcSet={singerMobile} media="(max-width: 1023px)" />
                     <img 
                         src={singerMobile} 
                         alt="Singer Hero illustration"
                         fetchpriority="high"
-                        className="w-full"
+                        className="object-cover h-full w-full "
                     />
                 </picture>
 

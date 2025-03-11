@@ -26,7 +26,7 @@ const ServicesPresentation = () => {
 
     return (
         <div className="w-page m-auto">
-            <h2 className="text-4xl text-dark-blue font-bold text-center mb-10">{servicesPresentation.title}</h2>
+            <h2 className="mt-0 md:mt-10 text-4xl text-dark-blue font-bold text-center mb-10">{servicesPresentation.title}</h2>
             {isDesktop ? (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {offers}
